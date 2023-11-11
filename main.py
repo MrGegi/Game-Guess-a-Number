@@ -60,7 +60,6 @@ def game():
     global attempts_left
     guess_error = None
     number_to_guess = randomizer(max_number)
-    print(number_to_guess)
     while attempts_left > 0:
         try:
             player_guess = int(input(f'{player_name} you have {attempts_left}/{max_attempts} attempts left. Enter your guess: '))
