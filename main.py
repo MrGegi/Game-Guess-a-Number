@@ -76,12 +76,14 @@ def game():
         elif guess_error <= max_error:
             print(f'You won! Generated number was {number_to_guess}, and your guess was {player_guess} whitch is within error range of {max_error}!')
             break
+        elif attempts_left == 0:
+            print(f'No more attempts! You lose. Generated number was {number_to_guess}')  
         else:
             if player_guess > number_to_guess:
                 print(f'Generated number is smaller than {player_guess}')
             else:
                 print(f'Generated number is larger then {player_guess}')
-    print(f'No more attempts! You lose. Generated number was {number_to_guess}')            
+              
         
  
 def main():
